@@ -10,16 +10,16 @@ class Gridprov < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/The-AI-Grid/The-Grid/releases/download/v0.1.0/gridprov_0.1.0_darwin_amd64.tar.gz"
-      sha256 "032891cbf3446b3f55fed8e572630fed5a5d807c778d046bc3a69c412993a400"
+      url "https://github.com/The-AI-Grid/grid-cli/releases/download/v0.1.0/gridprov_0.1.0_darwin_amd64.tar.gz"
+      sha256 "101ca25f4a046e7778b578a49fa290fdd330feccacbcacb786b0789a729e1a2e"
 
       def install
         bin.install "gridprov"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/The-AI-Grid/The-Grid/releases/download/v0.1.0/gridprov_0.1.0_darwin_arm64.tar.gz"
-      sha256 "50d7707b9161c8852e51de4532871357b4b2d80390809f0f253dcf17ceebae5f"
+      url "https://github.com/The-AI-Grid/grid-cli/releases/download/v0.1.0/gridprov_0.1.0_darwin_arm64.tar.gz"
+      sha256 "f7ce6fc55e3cabf95681296756e330300dae0bbf9fccd3e7d364deccf87a7f3c"
 
       def install
         bin.install "gridprov"
@@ -29,15 +29,15 @@ class Gridprov < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/The-AI-Grid/The-Grid/releases/download/v0.1.0/gridprov_0.1.0_linux_amd64.tar.gz"
-      sha256 "8352900b9a598736af089fd18f230897d95b4f8fbc8744def9ae05973b68c40d"
+      url "https://github.com/The-AI-Grid/grid-cli/releases/download/v0.1.0/gridprov_0.1.0_linux_amd64.tar.gz"
+      sha256 "860002e9404e727ee1ce1b20c1d375cf7ce640ac49b487feced0b8701bd21dd9"
       def install
         bin.install "gridprov"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/The-AI-Grid/The-Grid/releases/download/v0.1.0/gridprov_0.1.0_linux_arm64.tar.gz"
-      sha256 "36f2ced50ab25c3aa3eeb63be41bd5b08042001d43fb7696ec93c61845f76f33"
+      url "https://github.com/The-AI-Grid/grid-cli/releases/download/v0.1.0/gridprov_0.1.0_linux_arm64.tar.gz"
+      sha256 "14e961f595bb3348aa2bfd8da39cd88c57814e1b33fddd1a0aac13b1e04823e7"
       def install
         bin.install "gridprov"
       end

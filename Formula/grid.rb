@@ -10,16 +10,16 @@ class Grid < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/The-AI-Grid/The-Grid/releases/download/v0.1.0/grid_0.1.0_darwin_amd64.tar.gz"
-      sha256 "cd93ffa2c42bdcbb9406f1bb85dad3bac6c5fd0dd216ca7f8467e42e83ff7aaa"
+      url "https://github.com/The-AI-Grid/grid-cli/releases/download/v0.1.0/grid_0.1.0_darwin_amd64.tar.gz"
+      sha256 "cd36cd62c37afa43d1a097bcd02d1a07fd6f5309427e9b7f414499abe22245d4"
 
       def install
         bin.install "grid"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/The-AI-Grid/The-Grid/releases/download/v0.1.0/grid_0.1.0_darwin_arm64.tar.gz"
-      sha256 "4cba1c60369b487017b019e201718ba1922993e3ae8f3f1b8b68d5914e15dac6"
+      url "https://github.com/The-AI-Grid/grid-cli/releases/download/v0.1.0/grid_0.1.0_darwin_arm64.tar.gz"
+      sha256 "880dfa926cf88b4101622ea6e19110427068564821b7a43e1903e497ef74fd0a"
 
       def install
         bin.install "grid"
@@ -29,15 +29,15 @@ class Grid < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/The-AI-Grid/The-Grid/releases/download/v0.1.0/grid_0.1.0_linux_amd64.tar.gz"
-      sha256 "aefa30cca193d94ef61fefa6c1ab3212754e38cb12224052f766703d56767587"
+      url "https://github.com/The-AI-Grid/grid-cli/releases/download/v0.1.0/grid_0.1.0_linux_amd64.tar.gz"
+      sha256 "58adb058f452f08a1e8cd058ed8b96bf1c5a7a8afc1394b37fab9025c221a00c"
       def install
         bin.install "grid"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/The-AI-Grid/The-Grid/releases/download/v0.1.0/grid_0.1.0_linux_arm64.tar.gz"
-      sha256 "ac3c811878dca4545ed8804d2fbc971620bd0bc47f5f64a80d78638aa284147a"
+      url "https://github.com/The-AI-Grid/grid-cli/releases/download/v0.1.0/grid_0.1.0_linux_arm64.tar.gz"
+      sha256 "c71981037459f796cd8ca34326bb8c156ff3e73d3cc278b4c3ce1b85ef0f76d5"
       def install
         bin.install "grid"
       end

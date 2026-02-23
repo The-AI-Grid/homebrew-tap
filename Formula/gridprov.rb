@@ -5,23 +5,23 @@
 class Gridprov < Formula
   desc "The Grid Provider CLI — provider onboarding and management"
   homepage "https://theinferencegrid.com"
-  version "0.1.0"
+  version "0.1.1"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/The-AI-Grid/grid-cli/releases/download/v0.1.0/gridprov_0.1.0_darwin_amd64.tar.gz"
-      sha256 "101ca25f4a046e7778b578a49fa290fdd330feccacbcacb786b0789a729e1a2e"
+      url "https://github.com/The-AI-Grid/grid-cli/releases/download/v0.1.1/gridprov_0.1.1_darwin_amd64.tar.gz"
+      sha256 "41b0dbcdbd1829cd9231c82f86a01a4b268d04a5277bd4f2d8a88a27f813cc54"
 
-      def install
+      define_method(:install) do
         bin.install "gridprov"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/The-AI-Grid/grid-cli/releases/download/v0.1.0/gridprov_0.1.0_darwin_arm64.tar.gz"
-      sha256 "f7ce6fc55e3cabf95681296756e330300dae0bbf9fccd3e7d364deccf87a7f3c"
+      url "https://github.com/The-AI-Grid/grid-cli/releases/download/v0.1.1/gridprov_0.1.1_darwin_arm64.tar.gz"
+      sha256 "ab4079a3ae9b4edc9336d89c83a4aa6fc6e54b60b2013c37d9ef136c5c7dc361"
 
-      def install
+      define_method(:install) do
         bin.install "gridprov"
       end
     end
@@ -29,16 +29,16 @@ class Gridprov < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/The-AI-Grid/grid-cli/releases/download/v0.1.0/gridprov_0.1.0_linux_amd64.tar.gz"
-      sha256 "860002e9404e727ee1ce1b20c1d375cf7ce640ac49b487feced0b8701bd21dd9"
-      def install
+      url "https://github.com/The-AI-Grid/grid-cli/releases/download/v0.1.1/gridprov_0.1.1_linux_amd64.tar.gz"
+      sha256 "71af6b4ab9541799b5d3529709e9ed7fff51b96478a496d394e3a14261682a94"
+      define_method(:install) do
         bin.install "gridprov"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/The-AI-Grid/grid-cli/releases/download/v0.1.0/gridprov_0.1.0_linux_arm64.tar.gz"
-      sha256 "14e961f595bb3348aa2bfd8da39cd88c57814e1b33fddd1a0aac13b1e04823e7"
-      def install
+      url "https://github.com/The-AI-Grid/grid-cli/releases/download/v0.1.1/gridprov_0.1.1_linux_arm64.tar.gz"
+      sha256 "52be9a7b503d8e6e7d209e256994ef623117417af062543860ae961216bbb4ed"
+      define_method(:install) do
         bin.install "gridprov"
       end
     end

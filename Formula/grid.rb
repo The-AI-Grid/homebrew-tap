@@ -5,21 +5,21 @@
 class Grid < Formula
   desc "The Grid CLI — lab onboarding and model management"
   homepage "https://theinferencegrid.com"
-  version "0.1.1"
+  version "0.2.0"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/The-AI-Grid/grid-cli/releases/download/v0.1.1/grid_0.1.1_darwin_amd64.tar.gz"
-      sha256 "936f2e58b4515d180341ebe5363e7dcbf01fb6a8e4738d5c7717d0f7af685a3e"
+      url "https://github.com/The-AI-Grid/grid-cli/releases/download/v0.2.0/grid_0.2.0_darwin_amd64.tar.gz"
+      sha256 "13462f56172375f828fd59851e782234511e4ea11d7b0cd407a9aa92ff22fcc5"
 
       define_method(:install) do
         bin.install "grid"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/The-AI-Grid/grid-cli/releases/download/v0.1.1/grid_0.1.1_darwin_arm64.tar.gz"
-      sha256 "9c1090c2150417ea1bb1446525696ececa204e77e00b4fc93a730311e006f88e"
+      url "https://github.com/The-AI-Grid/grid-cli/releases/download/v0.2.0/grid_0.2.0_darwin_arm64.tar.gz"
+      sha256 "fcdaada43d06a6f0503664d8a6db68f732c12a928e5d3d559f7bfdd4da48e0aa"
 
       define_method(:install) do
         bin.install "grid"
@@ -29,15 +29,15 @@ class Grid < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/The-AI-Grid/grid-cli/releases/download/v0.1.1/grid_0.1.1_linux_amd64.tar.gz"
-      sha256 "e1b6b9dba9b9df2d48b1cf54e711d02cc2251dafbae29295649dca50163d90b9"
+      url "https://github.com/The-AI-Grid/grid-cli/releases/download/v0.2.0/grid_0.2.0_linux_amd64.tar.gz"
+      sha256 "5aa121f97e238633200508f94b5b138c6f80440dbc6e37160a038c143d76b384"
       define_method(:install) do
         bin.install "grid"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/The-AI-Grid/grid-cli/releases/download/v0.1.1/grid_0.1.1_linux_arm64.tar.gz"
-      sha256 "950d1e9e96827002ee62c6dc6e4a59e1316495c4ec8c5f5489d8196d6eb72e21"
+      url "https://github.com/The-AI-Grid/grid-cli/releases/download/v0.2.0/grid_0.2.0_linux_arm64.tar.gz"
+      sha256 "edbd4750f515ff7762ef2f07e67c82bfbc6de395d8036569a12fb349d84f5aff"
       define_method(:install) do
         bin.install "grid"
       end
